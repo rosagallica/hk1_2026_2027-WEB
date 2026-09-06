@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .logo {
+    margin: 0 auto;
+    width: 250px;
+    background-color: aqua;
+    border: 1px solid #555;
+    border-radius: 10px;
+    border-spacing: 0;    
+    overflow: hidden;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.logo th {
+    width: 220px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.jackson {
+    border-bottom: 3px solid #000;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 600px;
+    margin: 20px auto;
+    background-color: #99ccff;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.form-row > label {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.form-row span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    width: 120px;
+}
+.long-input {
+    width: 220px !important;
+}
+
+.city {
+    width: 150px !important;
+}
+
+.state {
+    width: 35px !important;
+}
+
+.zip {
+    width: 60px !important;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 20px;
+}
+
+textarea {
+    width: 320px;
+    height: 100px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid gray;
+}
+
+.comments-row textarea {
+    width: 320px;
+    height: 100px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="6a.html">
+    <table class="logo">
+        <tr>
+            <th class="jackson">Jackson</th>
+        </tr>
+        <tr>
+            <th>Electronics</th>
+        </tr>
+    </table>
+
+    <h2>Registration Form</h2>
+    <p class="intro">Register your Jackson Electronics product here</p>
+<div class="form-row">
+    <label for="firstname">FirstName:</label>
+    <input type="text">
+    <span>LastName:</span>
+    <input type="text">
+    </div>
+    <br>
+<div class="form-row">
+    <label for="adress1">Address #1:</label>
+    <input type="text" class="long-input">
+    </div>
+    <br>
+    <div class="form-row">
+    <label for="adress2">Address #2:</label>
+    <input type="text" class="long-input">
+    </div>
+    <br>
+
+    <div class="form-row">
+
+    <label>City:</label>
+    <input type="text" class="city">
+
+    <span>State:</span>
+    <input type="text" class="state">
+
+    <span>Zip:</span>
+    <input type="text" class="zip">
+
+</div>
+<br>
+
+<div class="form-row">
+    <label>Country:</label>
+    <input type="text" value="United States">
+</div>
+<hr>
+
+<div class="form-row">
+    <label for="product">Product:</label>
+    <select name="product" id="product">
+        <option value="ScanMaster">ScanMaster</option>
+        <option value="PrintMaster">PrintMaster</option>
+        <option value="LaserPro">LaserPro</option>
+    </select>
+</div>
+<br>
+<div class="form-row">
+    <label>Date Purchased:</label>
+    <input type="date">
+</div>
+<br>
+<div class="form-row">
+    <label for="serial">Serial #:</label>
+    <input type="text">
+</div>
+<br>
+<div class="form-row">
+
+    <label>Used for:</label>
+
+   <div class="options">
+        <label><input type="radio" name="usedfor"> Home</label>
+        <label><input type="radio" name="usedfor"> Business</label>
+        <label><input type="radio" name="usedfor"> Government</label>
+        <label><input type="radio" name="usedfor"> Educational Institution</label>
+        <label><input type="radio" name="usedfor"> Other</label>
+    </div>
+    </div>
+    <br>
+<div class="form-row">
+    <label>System (check all that apply):</label>
+
+    <div class="options">
+        <label><input type="checkbox"> Windows</label>
+        <label><input type="checkbox"> Macintosh</label>
+        <label><input type="checkbox"> UNIX</label>
+        <label><input type="checkbox"> Other</label>
+    </div>
+</div>
+    <hr>
+    
+   <div class="form-row comments-row">
+    <label>Comments:</label>
+    <textarea></textarea>
+</div>
+
+<div class="buttons">
+    <input type="submit" value="Click to register">
+    <input type="reset" value="Click to cancel">
+</div>
+</div>
+</div>
+    </form>    
+    </div>
+</body>
+</html>

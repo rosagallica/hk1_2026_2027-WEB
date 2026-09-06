@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+             width: 200px;
+             border: 1px solid #66aaff;
+             padding: 6px;
+             margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+                width: 120px;
+            }
+
+        .button {
+            text-align: center;           
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="6c.html">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text">
+            </div>
+            <br>
+
+            <div class="form-row">
+                <label for="phone">Telephone Number:</label>
+                <input type="tel">
+            </div>
+            <br>
+            
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email">
+            </div>
+            <br>
+
+            <div class="form-row">
+                <label for="color">Favorite Color:</label>
+                <input type="color">
+            </div>
+            <br>
+
+            <div class="form-row">
+                <label for="date">Date of Birth</label>
+                <input type="date" value="2015-07-16">
+            </div>
+            <br>
+
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            width: 600px;
+            border: 1px solid blue;
+            padding: 3px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 22px;
+        }
+
+        fieldset {
+            margin-bottom: 5px;
+            padding: 8px 10px;
+        }
+
+        legend {
+            font-size: 13px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+
+        .form-row > label {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+textarea {
+    width: 250px;
+    height: 95px;
+}
+
+select {
+    width: 95px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form action="6b.html">
+            <fieldset>
+                <legend>Your message:</legend>
+                <div class="form-row">
+                    <label for="to">To</label>
+                    <input type="text" value="Example Cafe">
+                </div>
+                <br>
+                <div class="form-row">
+                    <label for="email">Your email</label>
+                    <input type="email">
+                </div>
+                <br>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea rows="7" cols="35"></textarea>
+                </div>
+                <br>
+                <div class="form-row">
+                    <label for="file">Attach File</label>
+                    <input type="file">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>How you found us:</legend>
+                <div class="form-row">
+                    <label>How did you hear of us</label>
+                    <select>
+                        <option value="google">Google</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="friend">Friend</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+
+                <div class="form-row">
+                    <label>Newsletter</label>
+                    <input type="checkbox" checked>
+                    <span>Ensure this box is checked if you would like to receive email updates</span>
+                </div>
+            </fieldset>
+            <div class="button">
+            <input type="submit" value="Send message">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
