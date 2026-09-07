@@ -1,0 +1,12 @@
+body {
+    background-image: url("../IMG/background.jpg");
+    background-repeat: repeat;
+    text-align: center;
+}
+.logo {
+    margin-top: 30px;
+}
+
+.siggie {
+    margin-top: 20px;
+}
