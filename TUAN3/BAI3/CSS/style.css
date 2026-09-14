@@ -1,0 +1,186 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .container {
+      width: 820px;
+      margin: 20px auto;
+      border: 1px solid #777;
+      background: #fff;
+    }
+
+    .header-title {
+      background-color: #aa4b13;
+      background: linear-gradient(to bottom, #bd5415, #88390b);
+      color: #df9e38;
+      text-shadow: 2px 2px 3px #3a1503;
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      border-bottom: 1px solid #662604;
+    }
+
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #666;
+      padding: 6px 20px;
+    }
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+    }
+    .navbar ul li {
+      margin-right: 30px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #a85d14;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .navbar ul li a:hover {
+      color: #333;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: 125px;
+      background-image: url('../IMG/line.png');
+      background-repeat: repeat-x;
+      background-position: top left;
+      background-size: auto 80px;
+      height: 80px;
+    }
+
+    .main-body {
+      display: flex;
+      padding: 25px 30px 40px 30px;
+      gap: 40px;
+    }
+
+    .content-left {
+      flex: 6.5;
+    }
+    .form-heading {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 20px;
+      color: #b56c1d;
+      font-weight: bold;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+      word-spacing: 3px;
+    }
+    .quote {
+      font-style: italic;
+      color: #8c734b;
+      line-height: 1.4;
+      margin-bottom: 25px;
+      font-size: 12.5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #a6a6a6;
+      padding: 6px 0;
+      font-size: 13px;
+      color: #555;
+      outline: none;
+    }
+    .form-input::placeholder {
+      color: #777;
+    }
+    .form-input:focus {
+      border-bottom: 1px solid #aa4b13;
+    }
+    .btn-submit {
+      background-color: #6d6706;
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      text-transform: uppercase;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .btn-submit:hover {
+      background-color: #565103;
+    }
+
+    .sidebar-right {
+      flex: 3.5;
+    }
+    .box-links {
+      background-color: #f7e6ce;
+      border-radius: 18px 18px 0 0;
+      padding: 15px 20px 25px 20px;
+      margin-bottom: 25px;
+    }
+    .box-title {
+      font-family: 'Times New Roman', Georgia, serif;
+      color: #3b220c;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+    }
+    .links-list {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .links-list li {
+      color: #aa4b13;
+      margin-bottom: 7px;
+      font-size: 12.5px;
+    }
+    .links-list li a {
+      color: #9c4c11;
+      text-decoration: none;
+    }
+    .links-list li a:hover {
+      text-decoration: underline;
+    }
+
+    .info-container {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+    .leaf-thumb {
+      width: 75px;
+      height: 55px;
+      border: 1px solid #d4c1aa;
+      padding: 2px;
+      background: #fff;
+    }
+    .info-text {
+      font-size: 11.5px;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    .footer {
+      background: url('../IMG/footer.png') repeat-x bottom left;
+      background-size: auto 100%;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 500;
+      color: #222;
+    }

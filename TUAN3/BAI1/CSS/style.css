@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+#container {
+    width: 900px;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #7ad0ec, #46a3ee);
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 5px dotted white;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.logo {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 2px #0066ff, 0 0 4px #0066ff, 0 0 6px #0066ff, 0 0 8px #0066ff;
+}
+
+main {
+    display: flex;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 50%;
+    text-align: center;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: white;
+    font-size: 26px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.intro {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 7px;
+}
+
+.form-row label {
+    width: 140px;
+    flex-shrink: 0;
+    font-size: 13px;
+}
+
+.form-row input[type="text"] {
+    width: 210px;
+    height: 22px;
+    padding-left: 6px;
+    box-sizing: border-box;
+}
+
+.form-row select {
+    width: 50px;
+    height: 22px;
+}
+
+.question-row textarea {
+    width: 210px;
+    height: 80px;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+.question-row {
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    margin-left: 140px;
+    margin-top: 5px;
+}
+
+.buttons input {
+    margin-right: 5px;
+}
+
+aside img {
+    width: 100%;
+    max-width: 390px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #3d78aa;
+}
+
+aside h2 {
+    margin: 15px 0 0 0;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+aside h3 {
+    margin: 0;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+footer {
+    border-top: 5px dotted rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 5px 0;
+}
