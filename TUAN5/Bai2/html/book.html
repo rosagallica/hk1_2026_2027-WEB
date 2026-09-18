@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feane - Book Table</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-custom py-2">
+    <div class="container">
+      <a class="navbar-brand font-handwriting fs-2 text-white" href="../html/home.html">Feane</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav mx-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="../html/home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../html/book.html">Book Table</a></li>
+        </ul>
+        <a href="../html/order.html" class="btn btn-primary-custom rounded-pill px-4 py-2">Order Online</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Booking Section -->
+  <div class="container py-5">
+    <h2 class="font-handwriting display-5 mb-4">Book A Table</h2>
+    <div class="row g-4 align-items-stretch">
+      <!-- Cột trái: Form đặt bàn -->
+      <div class="col-md-6">
+        <form action="#" method="post">
+          <div class="mb-3">
+            <input type="text" class="form-control py-2" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control py-2" placeholder="Phone Number" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control py-2" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select py-2">
+              <option selected disabled>How many persons?</option>
+              <option value="2">2 Person</option>
+              <option value="3">3 Person</option>
+              <option value="4">4 Person</option>
+              <option value="5">5+ Person</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <input type="date" class="form-control py-2" required>
+          </div>
+          <button type="submit" class="btn btn-primary-custom rounded-pill px-5 py-2 text-uppercase">Book Now</button>
+        </form>
+      </div>
+
+      <!-- Cột phải: Google Map -->
+      <div class="col-md-6">
+        <div class="h-100 rounded overflow-hidden shadow-sm">
+          <img src="../img/map.png" alt="Google Map Location" class="img-fluid w-100 h-100 map-image"> <!--[cite: 3, 4] -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

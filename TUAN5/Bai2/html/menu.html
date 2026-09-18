@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feane - Menu</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-custom py-2">
+    <div class="container">
+      <a class="navbar-brand font-handwriting fs-2 text-white" href="home.html">Feane</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav mx-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="../html/home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../html/menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/book.html">Book Table</a></li>
+        </ul>
+        <a href="../html/order.html" class="btn btn-primary-custom rounded-pill px-4 py-2">Order Online</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <div class="container py-5 text-center">
+    <h2 class="font-handwriting display-5 mb-4">Our Menu</h2>
+    
+    <!-- Filter Tabs -->
+    <div class="d-flex justify-content-center gap-2 mb-5">
+      <button class="btn btn-dark rounded-pill px-4">All</button>
+      <button class="btn btn-light rounded-pill px-4">Burger</button>
+      <button class="btn btn-light rounded-pill px-4">Pizza</button>
+      <button class="btn btn-light rounded-pill px-4">Pasta</button>
+      <button class="btn btn-light rounded-pill px-4">Fries</button>
+    </div>
+
+    <!-- 3 Cột món ăn -->
+    <div class="row g-4 pt-3 text-start">
+      <!-- Item 1 -->
+      <div class="col-md-4">
+        <div class="menu-card shadow">
+          <div class="menu-img-wrap"><img src="../img/f1.png" alt="Pizza"></div>
+          <h5>Delicious Pizza</h5>
+          <p class="small text-secondary">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque.</p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="fs-5 fw-bold">$20</span>
+            <a href="../html/order.html" class="cart-btn"><i class="bi bi-cart-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="col-md-4">
+        <div class="menu-card shadow">
+          <div class="menu-img-wrap"><img src="../img/f2.png" alt="Burger"></div>
+          <h5>Delicious Burger</h5>
+          <p class="small text-secondary">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque.</p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="fs-5 fw-bold">$15</span>
+            <a href="../html/order.html" class="cart-btn"><i class="bi bi-cart-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col-md-4">
+        <div class="menu-card shadow">
+          <div class="menu-img-wrap"><img src="../img/f3.png" alt="Pizza"></div>
+          <h5>Delicious Pizza</h5>
+          <p class="small text-secondary">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque.</p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="fs-5 fw-bold">$17</span>
+            <a href="../html/order.html" class="cart-btn"><i class="bi bi-cart-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
