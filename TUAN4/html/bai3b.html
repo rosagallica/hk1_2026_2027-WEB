@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Modal Carousel</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        .header-top {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+}
+
+.header-top a,
+.header-top span {
+    font-size: 13px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header-top">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="../img/logo cinema.png" alt="Galaxy Cinema" class="logo">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="text-decoration-none text-secondary me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            👤 Đăng nhập
+                        </a>
+                        <span class="text-danger">VN</span>
+                        <span class="mx-2 text-secondary">|</span>
+                        <a href="#" class="text-secondary text-decoration-none">EN</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <ul class="navbar-nav w-100 justify-content-evenly">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">MUA VÉ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PHIM ĐANG CHIẾU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PHIM SẮP CHIẾU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">RẠP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">KHUYẾN MÃI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HỖ TRỢ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">THÀNH VIÊN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/poster1.jpg" alt="Poster 1" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/poster2.jpg" alt="Poster 2" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/poster3.jpg" alt="Poster 3" class="d-block w-100">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container mt-4">
+
+    <h3 class="text-center mb-4">
+        PHIM ĐANG CHIẾU
+    </h3>
+
+    <div class="row g-4">
+
+        <!-- PHIM 1 -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="../img/phim1.jpg"
+                     class="card-img-top"
+                     alt="Phim 1">
+
+                <div class="card-body">
+                    <h5 class="card-title">Thỏ Ơi</h5>
+
+                    <button class="btn btn-danger w-100">
+                        MUA VÉ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PHIM 2 -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="../img/phim2.jpg"
+                     class="card-img-top"
+                     alt="Phim 2">
+
+                <div class="card-body">
+                    <h5 class="card-title">Trang giấy cuối cùng</h5>
+                    <button class="btn btn-danger w-100">
+                        MUA VÉ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PHIM 3 -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="../img/phim3.jpg"
+                     class="card-img-top"
+                     alt="Phim 3">
+
+                <div class="card-body">
+                    <h5 class="card-title">My Youth</h5>
+                    <button class="btn btn-danger w-100">
+                        MUA VÉ
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<!-- MODAL ĐĂNG NHẬP / ĐĂNG KÝ -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- HEADER -->
+            <div class="modal-header">
+
+                <ul class="nav nav-tabs border-0">
+
+                    <!-- Nút ĐĂNG NHẬP -->
+                    <li class="nav-item">
+                        <button class="nav-link active"
+                                data-bs-toggle="tab"
+                                data-bs-target="#login">
+                            ĐĂNG NHẬP
+                        </button>
+                    </li>
+
+                    <!-- Nút ĐĂNG KÝ -->
+                    <li class="nav-item">
+                        <button class="nav-link"
+                                data-bs-toggle="tab"
+                                data-bs-target="#register">
+                            ĐĂNG KÝ
+                        </button>
+                    </li>
+
+                </ul>
+
+                <!-- Nút X -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+
+            <!-- BODY -->
+            <div class="modal-body">
+
+                <div class="tab-content">
+
+                    <!-- ================= -->
+                    <!-- FORM ĐĂNG NHẬP -->
+                    <!-- ================= -->
+
+                    <div class="tab-pane fade show active" id="login">
+
+                        <p class="text-muted small">
+                            Vui lòng đăng nhập trước khi mua vé để tích lũy điểm,
+                            cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cinema.
+                        </p>
+
+                        <div class="mb-3">
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Email">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="password"
+                                   class="form-control"
+                                   placeholder="Mật khẩu">
+                        </div>
+
+                        <div class="mb-3">
+                            <a href="#" class="text-muted small">
+                                Quên mật khẩu?
+                            </a>
+                        </div>
+
+                        <button type="button"
+                                class="btn btn-danger w-100">
+                            ĐĂNG NHẬP
+                        </button>
+
+                    </div>
+
+
+                    <!-- ================= -->
+                    <!-- FORM ĐĂNG KÝ -->
+                    <!-- ================= -->
+
+                    <div class="tab-pane fade" id="register">
+
+                        <form>
+
+        <!-- Họ tên -->
+        <div class="mb-2">
+            <input type="text"
+                   class="form-control"
+                   placeholder="Họ tên"
+                   required>
+        </div>
+
+
+        <!-- Số điện thoại + giới tính -->
+        <div class="row g-2 mb-2">
+
+            <div class="col-6">
+                <input type="tel"
+                       class="form-control"
+                       placeholder="Số điện thoại"
+                       required>
+            </div>
+
+            <div class="col-6">
+                <select class="form-select">
+                    <option selected>Chọn giới tính</option>
+                    <option>Nam</option>
+                    <option>Nữ</option>
+                    <option>Khác</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="mb-2">
+            <input type="email"
+                   class="form-control"
+                   placeholder="Email"
+                   required>
+        </div>
+
+
+        <!-- Mật khẩu -->
+        <div class="mb-2">
+            <input type="password"
+                   class="form-control"
+                   placeholder="Mật khẩu"
+                   required>
+        </div>
+
+
+        <!-- Xác nhận mật khẩu -->
+        <div class="mb-2">
+            <input type="password"
+                   class="form-control"
+                   placeholder="Xác nhận mật khẩu"
+                   required>
+        </div>
+
+
+        <!-- Thành phố + Quận -->
+        <div class="row g-2 mb-2">
+
+            <div class="col-6">
+                <select class="form-select">
+                    <option selected>Chọn thành phố</option>
+                    <option>Hồ Chí Minh</option>
+                    <option>Hà Nội</option>
+                    <option>Đà Nẵng</option>
+                </select>
+            </div>
+
+            <div class="col-6">
+                <select class="form-select">
+                    <option selected>Quận</option>
+                    <option>Quận 1</option>
+                    <option>Quận 3</option>
+                    <option>Quận 7</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <!-- Địa chỉ -->
+        <div class="mb-2">
+            <input type="text"
+                   class="form-control"
+                   placeholder="Địa chỉ">
+        </div>
+
+
+        <!-- Ngày sinh -->
+        <div class="mb-2">
+            <input type="date"
+                   class="form-control">
+        </div>
+        <div class="row g-2 align-items-center mb-2">
+
+    <div class="col-4">
+        <div class="text-center fs-5">
+            <span>352176</span>
+        </div>
+    </div>
+
+    <div class="col-1">
+        <span class="fs-4">↻</span>
+    </div>
+
+    <div class="col-7">
+        <input type="text"
+               class="form-control"
+               placeholder="Nhập mã captcha">
+    </div>
+    </form>
+    <div class="small text-muted mb-2">
+    Tôi đã đọc và đồng ý với
+    <a href="#">CHÍNH SÁCH</a>
+    của chương trình thành viên.
+</div>
+<button type="submit"
+        class="btn btn-danger w-100">
+    ĐĂNG KÝ
+</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Tittle</th>
+                <th>Status</th>
+                <th>Position</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="d-flex">
+                        <img src="../img/ảnh 5.jpg" width="40" height="40" class="rounded-circle me-2" alt="John Doe">
+                        <div>
+                            <div><span><strong>John Doe</strong></span></div>
+                        <small class="text-muted">john.doe@gmail.com</small>
+                        </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <div>
+                            <div>Software engineer</div>                            
+                            <small class="text-muted">IT department</small>
+                        </div>
+                    </td>
+                    <td class="align-middle"><span class="badge rounded-pill bg-success">Active</span></td>
+                    <td class="align-middle">Senior</td>
+                    <td class="align-middle"><button class="btn btn-link btn-sm">EDIT</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex">
+                        <img src="../img/ảnh 4.jpg" width="40" height="40" class="rounded-circle me-2" alt="Alex Ray">
+                        <div>
+                            <div><span><strong>Alex Ray</strong></span></div>
+                        <small class="text-muted">alex.ray@gmail.com</small>
+                        </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <div>
+                            <div>Consultant</div>                            
+                            <small class="text-muted">Finance</small>
+                        </div>
+                    </td>
+                    <td class="align-middle"><span class="badge rounded-pill bg-primary">Junior</span></td>
+                    <td class="align-middle">Senior</td>
+                    <td class="align-middle"><button class="btn btn-link btn-sm">EDIT</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex">
+                        <img src="../img/ảnh 3.jpg" width="40" height="40" class="rounded-circle me-2" alt="Kate Huntington">
+                        <div>
+                            <div><span><strong>Kate Huntington</strong></span></div>
+                        <small class="text-muted">kate.huntington@gmail.com</small>
+                        </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <div>
+                            <div>Designer</div>                            
+                            <small class="text-muted">UI/UX</small>
+                        </div>
+                    </td>
+                    <td class="align-middle"><span class="badge rounded-pill bg-warning">Awaiting</span></td>
+                    <td class="align-middle">Senior</td>
+                    <td class="align-middle"><button class="btn btn-link btn-sm">EDIT</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

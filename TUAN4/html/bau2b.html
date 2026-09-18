@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Collapsible navigation bar</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container d-flex align-items-center">
+                <form action="" class="d-flex">
+                    <input type="search" class="form-control" placeholder="Search">                    
+                    <button class="btn btn-light ms-2" type="submit">Search</button>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>                    
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Engineering</a></li>
+                                    <li><a href="#" class="dropdown-item">Telecom</a></li>
+                                    <li><a href="#" class="dropdown-item">Energy</a></li>
+                                    <li><a href="#" class="dropdown-item">Finance</a></li>
+                                    <li><a href="#" class="dropdown-item">Consultancy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+  </body>
+</html>
